@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  get 'static_pages/index'
+  get 'static_pages/navbar'
+  get 'static_pages/footer' 
+
+  get 'static_pages/big_banner'
+  get 'static_pages/small_banner'
+
+  get 'static_pages/authentification_form'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.
@@ -6,9 +14,4 @@ Rails.application.routes.draw do
   get "up" => "rails/health#show", as: :rails_health_check
 
   root "static_pages#index"
-  resources :static_pages, only: [:index]
-  resources :navbars, only: [:index]
-  resources :footers, only: [:index]
-  resources :forms, only: [:index]
-  resources :banners, only: [:index]
 end
