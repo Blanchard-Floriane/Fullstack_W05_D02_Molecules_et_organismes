@@ -19,7 +19,7 @@
   --bs-footer-toggler-border-radius: var(--bs-border-radius);
   --bs-footer-toggler-focus-width: 0.25rem;
   --bs-footer-toggler-transition: box-shadow 0.15s ease-in-out;
-  position: fixed;
+  position: relative;
   bottom: 0;
   left: 0;
   width: 100%;
